@@ -40,6 +40,10 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.css'],
         alias: {
+            "images": path.resolve(
+                __dirname,
+                "images"
+            ),  
             "scrollTo": path.resolve(
                 __dirname,
                 "node_modules/jquery.scrollto/jquery.scrollTo.min"
