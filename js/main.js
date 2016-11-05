@@ -1,4 +1,4 @@
-$('body').vegas({
+$('.slides').vegas({
     delay: 10000,
     preloadImage:true,
     timer: true,

@@ -15,9 +15,11 @@ module.exports = {
             test: /\.html$/,
             loader: 'file?name=[name].[ext]'
         }, {
-            test: /\.(jpe?g|png|gif)$/,
-            exclude: /(node_modules)/,
-            loader: 'url-loader?limit=10000'
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            loaders: [
+                'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+            ]
         }, {
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "url-loader?limit=10000&minetype=application/font-woff"
