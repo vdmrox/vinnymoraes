@@ -8,6 +8,10 @@ body {
 .slides {
     width: 100vw;
     height: 100vh;
+
+    .vegas-timer {
+        top: 0;
+    }
 }
 
 .main-container {
@@ -74,16 +78,30 @@ body {
 footer {
     position: fixed;
     padding: 10px 0;
-    bottom: 2px;
+    bottom: 0;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.6);
+    font-family: 'Dosis', sans-serif;
     color: #fff;
     width: 100%;
-    text-align: center;
-    font-size: 14px;
+
+    .copyright {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .social-media-box {
+        text-align: right;
+
+        &-icon {
+            padding-left: 10px;
+            font-size: 20px;
+        }
+    }
 }
 
 .display-middle {
     display: inline-block;
     vertical-align: middle;
 }
+
